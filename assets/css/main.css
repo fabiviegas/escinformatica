@@ -203,53 +203,26 @@ menu,
 nav {
   display: block;
 }
-.btn__gray {
+.btn__blue {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFF;
-  font-size: 18px;
+  color: #F0F8FF;
+  font-size: 22px;
   font-weight: 700;
   line-height: normal;
-  border-radius: 50px;
-  background-color: #383A36;
+  border-radius: 20px;
+  background-color: #0184FE;
   transition: all linear 0.15s;
-  padding: 25px 50px;
-}
-.btn__gray:hover {
-  color: #383A36;
-  background-color: #FFF;
-  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.5);
-}
-@media screen and (min-width: 1200px) {
-  .btn__gray {
-    font-size: 22px;
-  }
-}
-.btn__green {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFF;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: normal;
-  border-radius: 30px;
-  background-color: #5DA042;
-  transition: all linear 0.15s;
-  padding: 18px 34px;
-  gap: 10px;
-}
-.btn__green .icon__whats {
+  padding: 18px 60px;
   width: fit-content;
+  line-height: 102.1%;
 }
-.btn__green:hover {
-  color: #FFF;
-  background-color: #383A36;
+.btn__blue:hover {
+  color: #0184FE;
+  background-color: #F0F8FF;
 }
 @keyframes effect--fade_in_right {
   0% {
@@ -279,7 +252,7 @@ nav {
   margin-right: auto;
 }
 .page__header .wrapper .logo a {
-  width: 145px;
+  width: 205px;
 }
 .page__header .wrapper .logo a img {
   width: 100%;
@@ -322,7 +295,7 @@ nav {
   margin: 30px 30px 109px 30px;
 }
 .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__header .overlay__logo {
-  width: 130px;
+  width: 190px;
 }
 .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__menu {
   margin: 0;
@@ -381,8 +354,9 @@ nav {
 .page__banner {
   background-image: url('../img/banner-mobile.png');
   background-repeat: no-repeat;
-  padding-top: 163px;
-  padding-bottom: 268px;
+  padding-top: 195px;
+  padding-bottom: 60px;
+  background-size: 100%;
 }
 .page__banner .wrapper {
   max-width: 1024px;
@@ -392,7 +366,7 @@ nav {
   margin-right: auto;
 }
 .page__banner .wrapper .title {
-  font-size: 42px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 8px;
@@ -405,7 +379,7 @@ nav {
   background-position: center;
 }
 .page__banner .wrapper .description {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   max-width: 619px;
   margin-bottom: 28px;
@@ -423,7 +397,7 @@ nav {
   width: 100%;
 }
 .page__banner .wrapper .btn__down .down .chevron__down {
-  width: fit-content;
+  width: 35px;
 }
 @media screen and (min-width: 1200px) {
   .page__banner {
@@ -439,66 +413,117 @@ nav {
   }
   .page__banner .wrapper .description {
     width: 619px;
+    font-size: 22px;
   }
 }
 .page__about {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #F0F8FF;
+  overflow-y: hidden;
 }
 .page__about .wrapper {
-  max-width: 1224px;
+  max-width: 1190px;
   padding-left: 24px;
   padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
-.page__about .wrapper .about__content {
+.page__about .wrapper .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-}
-.page__about .wrapper .about__content .title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 8px;
-  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #020307;
+  margin-bottom: 35px;
   text-transform: uppercase;
 }
-.page__about .wrapper .about__content .subtitle {
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 20px;
+.page__about .wrapper .about__content {
+  position: relative;
 }
-.page__about .wrapper .about__content .subtitle span {
-  color: #5DA042;
+.page__about .wrapper .about__content .cover {
+  width: 100%;
+  max-width: 533px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
-.page__about .wrapper .about__content .text {
+.page__about .wrapper .about__content .cover__detail {
+  display: none;
+}
+.page__about .wrapper .about__content .content .about__text {
   font-size: 16px;
-  line-height: 130%;
   font-weight: 400;
-  margin-bottom: 30px;
+  color: #020307;
+  line-height: 150%;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.page__about .wrapper .about__content .text span {
+.page__about .wrapper .about__content .content .about__text span {
+  color: #0075E1;
   font-weight: 600;
 }
-@media screen and (min-width: 1200px) {
+.page__about .wrapper .about__content .content .about__numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 60px;
+  margin-top: 45px;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info {
+  text-align: center;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info .number {
+  font-size: 96px;
+  font-weight: 700;
+  color: #0184FE;
+  line-height: 110%;
+}
+.page__about .wrapper .about__content .content .about__numbers .number__info .info {
+  font-size: 18;
+  text-transform: uppercase;
+  letter-spacing: 29%;
+  color: #020307;
+}
+@media screen and (min-width: 768px) {
   .page__about {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 111px;
+    padding-bottom: 103px;
+  }
+  .page__about .wrapper .title {
+    font-size: 42px;
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
   .page__about .wrapper .about__content {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
-    text-align: left;
+    justify-content: space-between;
+    gap: 70px;
   }
-  .page__about .wrapper .about__content .subtitle {
-    font-size: 42px;
+  .page__about .wrapper .about__content .cover__detail {
+    display: block;
+    position: absolute;
+    right: -42px;
+    top: -20px;
+    width: fit-content;
   }
-  .page__about .wrapper .about__content .text {
+  .page__about .wrapper .about__content .content {
+    max-width: 571px;
+  }
+  .page__about .wrapper .about__content .content .about__text {
     font-size: 18px;
-    line-height: 148%;
+    line-height: 160%;
+    text-align: justify;
+  }
+  .page__about .wrapper .about__content .content .about__numbers {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 .page__cta {
