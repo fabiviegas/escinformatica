@@ -4,7 +4,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F0F8FF;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
     .wrapper {
         max-width: 1190px;
@@ -25,18 +25,25 @@
             text-transform: uppercase;
         }
 
-        .about__content {
-            position: relative;
+        .about__content {            
 
-            .cover {
-                width: 100%;
-                max-width: 533px;                
-                border-top-left-radius: 30px;
-                border-bottom-right-radius: 30px;
-            }
+            .cover__about {
+                position: relative;
 
-            .cover__detail {
-                display: none;
+                .cover {
+                    width: 100%;
+                    max-width: 533px;                
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+
+                .cover__detail {
+                    position: absolute;
+                    right: -22px;
+                    top: -22px;
+                    width: 60px;
+                }
+
             }
 
             .content {
@@ -45,7 +52,7 @@
                     font-weight: 400;
                     color: #020307;
                     line-height: 150%;
-                    margin-bottom: 20px;
+                    margin-bottom: 60px;
                     text-align: center;
 
                     span {
@@ -60,7 +67,6 @@
                     align-items: center;
                     gap: 45px;
                     margin-bottom: 60px;
-                    margin-top: 45px;
 
                     .number__info {
                         text-align: center;
@@ -102,12 +108,11 @@
                 justify-content: space-between;
                 gap: 70px;
 
-                .cover__detail {
-                    display: block;
-                    position: absolute;
-                    right: -42px;
-                    top: -20px;
-                    width: fit-content;
+                .cover__about {
+                    .cover__detail {
+                        width: 100px;
+                        top: -34px;
+                    }
                 }
 
                 .content {
@@ -117,6 +122,7 @@
                         font-size: 18px;
                         line-height: 160%;
                         text-align: justify;
+                        margin-bottom: 35px;
                     }
 
                     .about__numbers {
@@ -124,7 +130,6 @@
                         justify-content: center;
                         gap: 60px;
                         margin-bottom: 0;
-                        margin-top: 0;
                     }
                 }
             }
