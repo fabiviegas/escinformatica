@@ -230,6 +230,33 @@ nav {
 .btn__blue:hover .icon__whats {
   filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(3283%) hue-rotate(197deg) brightness(107%) contrast(99%);
 }
+.float__whatsapp {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 74px;
+  height: 74px;
+  background-color: #5BBC48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  z-index: 2999;
+  transition: all linear 0.15s;
+  border: 0;
+  border-radius: 5px;
+}
+.float__whatsapp img {
+  width: 55px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(202deg) brightness(106%) contrast(101%);
+}
+.float__whatsapp:hover {
+  background-color: white;
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.2);
+}
+.float__whatsapp:hover img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(10%) saturate(2974%) hue-rotate(64deg) brightness(99%) contrast(75%);
+}
 @keyframes effect--fade_in_right {
   0% {
     opacity: 0;
@@ -731,7 +758,6 @@ nav {
   background-image: url('../img/bg-modal-1.png');
   background-position: bottom 70px right 0;
   background-repeat: no-repeat;
-  min-height: 560px;
 }
 .modal.modal__service .modal-dialog .modal-content .modal-header {
   padding: 40px;
@@ -770,8 +796,9 @@ nav {
   right: 40px;
 }
 .modal.modal__service .modal-dialog .modal-content .modal-body {
-  padding: 0 80px 100px 80px;
+  padding: 0 30px 100px 30px;
   display: flex;
+  flex-direction: column;
   gap: 30px;
   justify-content: center;
   position: relative;
@@ -780,7 +807,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 50%;
 }
 .modal.modal__service .modal-dialog .modal-content .modal-body .modal__content .list__title {
   font-size: 16px;
@@ -819,6 +845,18 @@ nav {
 .modal.modal__service .modal-dialog .modal-content .modal-body .btn__modal:hover {
   background-color: #0075E1;
   color: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .modal.modal__service .modal-dialog .modal-content {
+    min-height: 560px;
+  }
+  .modal.modal__service .modal-dialog .modal-content .modal-body {
+    flex-direction: row;
+    padding: 0 80px 100px 80px;
+  }
+  .modal.modal__service .modal-dialog .modal-content .modal-body .modal__content {
+    width: 50%;
+  }
 }
 .page__testimonials {
   position: relative;
