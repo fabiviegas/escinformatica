@@ -344,6 +344,7 @@ nav {
   padding: 12px 34px;
   transition: all linear 0.15s;
   margin-top: 32px;
+  border-radius: 5px;
 }
 .page__header .wrapper .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .btn__whats .icon {
   width: fit-content;
@@ -396,6 +397,7 @@ nav {
     letter-spacing: 3.6px;
     padding: 12px 34px;
     transition: all linear 0.15s;
+    border-radius: 5px;
   }
   .page__header .wrapper .is--desktop .btn__whats .icon {
     width: fit-content;
@@ -455,6 +457,7 @@ nav {
   padding: 11px 36px;
   transition: all linear 0.15s;
   width: fit-content;
+  border-radius: 5px;
 }
 .page__banner .wrapper .content .button .icon {
   width: fit-content;
@@ -520,12 +523,163 @@ nav {
 .brands__scrolling .do-not-overflow .marquee .icon {
   margin-bottom: 8px;
 }
+@media (max-width: 1200px) {
+  .brands__scrolling .do-not-overflow {
+    padding: 32px 0;
+  }
+  .brands__scrolling .do-not-overflow .ticker-container .ticker {
+    gap: 64px;
+    animation: scroll 10s linear infinite;
+  }
+  .brands__scrolling .do-not-overflow .marquee {
+    font-size: 30px;
+  }
+  .brands__scrolling .do-not-overflow .marquee .icon {
+    width: 30px;
+    margin-bottom: 5px;
+  }
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+.page__about {
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+.page__about .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  max-width: 1108px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 94px;
+}
+.page__about .wrapper .content {
+  width: 462px;
+}
+.page__about .wrapper .content .heading {
+  margin-bottom: 32px;
+}
+.page__about .wrapper .content .heading .title__detail {
+  margin-bottom: 10px;
+}
+.page__about .wrapper .content .heading .title {
+  font: 400 16px "Roboto", sans serif;
+  line-height: 127%;
+  letter-spacing: 2.2px;
+  margin-bottom: 5px;
+  color: #FF9500;
+  text-transform: uppercase;
+}
+.page__about .wrapper .content .heading .subtitle {
+  font: 400 64px "Bebas Neue", serif;
+  color: #242423;
+  line-height: 94%;
+  letter-spacing: -1.3px;
+}
+.page__about .wrapper .content .text__highlight {
+  font: 500 24px "Roboto", sans serif;
+  color: #131312;
+  line-height: 122%;
+  margin-bottom: 32px;
+}
+.page__about .wrapper .content .text__highlight span {
+  font-weight: 700;
+}
+.page__about .wrapper .content .text {
+  font: 400 16px "Roboto", sans serif;
+  color: #131312;
+  line-height: 137%;
+}
+.page__about .wrapper .content .text span {
+  font-weight: 700;
+}
+.page__about .wrapper .cover {
+  max-width: 434px;
+  box-shadow: 20px 20px 0 #131312;
+  border-radius: 5px;
+}
+.page__about .wrapper__features {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+  max-width: 1246px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.page__about .wrapper__features .card__feature {
+  padding: 30px 42px;
+  width: 50%;
+}
+.page__about .wrapper__features .card__feature .card__title {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  font: 700 22px "Roboto", sans serif;
+  color: #F5F5F5;
+  margin-bottom: 16px;
+}
+.page__about .wrapper__features .card__feature .card__title .icon {
+  width: fit-content;
+}
+.page__about .wrapper__features .card__feature .text {
+  font: 400 16px "Roboto", sans serif;
+  color: #F5F5F5;
+}
+.page__about .wrapper__features .card__feature.card-1 {
+  background-color: #242423;
+}
+.page__about .wrapper__features .card__feature.card-2 {
+  background-color: #FF9500;
+}
+.page__about .wrapper__features .card__feature.card-2 .text {
+  color: #131312;
+}
+@media (max-width: 1200px) {
+  .page__about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page__about .wrapper {
+    gap: 42px;
+    flex-direction: column;
+    margin-bottom: 72px;
+  }
+  .page__about .wrapper .content {
+    width: 100%;
+  }
+  .page__about .wrapper .content .heading .subtitle {
+    font-size: 52px;
+  }
+  .page__about .wrapper .content .text__highlight {
+    font-size: 22px;
+  }
+  .page__about .wrapper .cover {
+    width: 90%;
+  }
+  .page__about .wrapper__features {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .page__about .wrapper__features .card__feature {
+    width: 100%;
+    padding: 24px;
+  }
+  .page__about .wrapper__features .card__feature .card__title {
+    font-size: 22px;
+    gap: 16px;
   }
 }
 .page__footer {
