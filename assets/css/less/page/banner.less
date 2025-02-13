@@ -1,2 +1,91 @@
 //out: false
 
+.page__banner {
+   background-image: url('../img/bg-banner-desktop.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: left -4px top 0;
+   
+   .wrapper {
+      max-width: 1128px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 254px;
+      padding-bottom: 50px;
+
+      .content {
+         max-width: 475px;
+         margin-bottom: 100px;
+
+         .title__detail {
+            margin-bottom: 24px;
+         }
+
+         .title {
+            font: 400 72px @fontB;
+            color: #242423;
+            line-height: 94%;
+            letter-spacing: -1.4px;
+            margin-bottom: 16px;
+         }
+
+         .description {
+            font: 16px 400 @fontR;
+            color: #000;
+            line-height: 127%;
+            margin-bottom: 32px;
+         }
+
+         .button {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background-color: #F1991D;
+            font: 700 16px @fontR;
+            line-height: 116%;
+            letter-spacing: 2.6px;
+            color: #F5F5F5;
+            padding: 11px 36px;
+            transition: all linear .15s;
+            width: fit-content;
+
+            .icon {
+                width: fit-content;
+            }
+
+            &:hover {
+                background-color: #242423;
+                color: #F5F5F5;
+            }
+         }
+      }
+
+      .down {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+   }
+
+   @media (max-width: 1200px) {
+      background-image: url('../img/bg-banner-mobile.png');
+      background-position: left 0 top 0;
+
+      .wrapper {
+         padding-top: 205px;
+         padding-bottom: 36px;
+         padding-left: 40px;
+         padding-right: 40px;
+
+         .content {
+            margin-bottom: 180px;
+
+            .title {
+               font-size: 54px;
+            }
+         }
+      }
+   }
+}

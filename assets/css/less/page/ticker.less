@@ -1,1 +1,55 @@
 //out: false
+
+.brands__scrolling {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	object-fit: contain;
+  background-color: #EAE4DB;
+
+  .do-not-overflow {
+    overflow: hidden;
+    padding: 52px 0;
+
+    .ticker-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;      
+      object-fit: contain;
+    }
+    
+    .ticker-container .ticker {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      animation: scroll 30s linear infinite;
+    }
+    
+    .marquee {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font: 400 40px @fontB;
+      line-height: 90%;
+      color: #131312;
+    
+      .icon {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  
+  
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
