@@ -5,9 +5,98 @@
     padding-bottom: 135px;
     background-image: url('../img/bg-benefits-desktop.png');
     background-repeat: no-repeat;
-    background-position: top 0 left 0;
+    background-position: top 0 left -200px;
 
     .wrapper {
-        
+        max-width: 1088px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 485px;
+            margin-bottom: 84px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            .title__detail {
+                width: fit-content;
+                margin-bottom: 8px;
+            }
+
+            .title {
+                font: 400 16px @fontR;
+                line-height: 127%;
+                letter-spacing: 2.2px;
+                margin-bottom: 4px;
+                color: #FF9500;
+                text-transform: uppercase;
+            }
+
+            .subtitle {
+                font: 400 64px @fontB;
+                color: #242423;
+                line-height: 94%;
+                letter-spacing: -1.3px;
+                text-align: center;
+            }
+        }
+
+        .cards__benefits {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+
+            .card {
+                width: 224px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 0 20px rgba(19, 19, 18, 10%), 5px 5px 0 #242423;
+                border-radius: 5px;
+
+                .icon {
+                   width: 30px;
+                   margin-bottom: 8px; 
+                }
+
+                .card__title {
+                   font: 700 24px @fontR;
+                   color: #131312;
+                   margin-bottom: 14px;                    
+                }
+
+                .text {
+                    font: 400 14px @fontR;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: none;
+
+        .wrapper {
+            .heading {
+                width: 286px;
+                margin-bottom: 32px;
+
+                .subtitle {
+                    font-size: 52px;
+                }
+            }
+        }
+
     }
 }

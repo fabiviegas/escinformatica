@@ -149,6 +149,132 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64RgL5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64ZgK5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64UYK5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64RgK5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64SoK5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64cYN5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64f8N5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64ZgN5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVW2ZhZI2eCN5jzbjEETS9weq8-19ehAyvMum7nfDB64bEN5Xk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyo_BJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyUyovBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyXsovBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyovBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWAovBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyVspfBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyVVpfBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyUypfBJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyUbpfBJ.ttf) format('truetype');
+}
 html {
   scroll-behavior: smooth;
 }
@@ -570,13 +696,13 @@ nav {
   margin-bottom: 32px;
 }
 .page__about .wrapper .content .heading .title__detail {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .page__about .wrapper .content .heading .title {
   font: 400 16px "Roboto", sans serif;
   line-height: 127%;
   letter-spacing: 2.2px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: #FF9500;
   text-transform: uppercase;
 }
@@ -738,6 +864,237 @@ nav {
   .page__cta-1 .wrapper .title {
     padding-left: 24px;
     width: 100%;
+  }
+}
+.page__benefits {
+  padding-top: 100px;
+  padding-bottom: 135px;
+  background-image: url('../img/bg-benefits-desktop.png');
+  background-repeat: no-repeat;
+  background-position: top 0 left -200px;
+}
+.page__benefits .wrapper {
+  max-width: 1088px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__benefits .wrapper .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 485px;
+  margin-bottom: 84px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__benefits .wrapper .heading .title__detail {
+  width: fit-content;
+  margin-bottom: 8px;
+}
+.page__benefits .wrapper .heading .title {
+  font: 400 16px "Roboto", sans serif;
+  line-height: 127%;
+  letter-spacing: 2.2px;
+  margin-bottom: 4px;
+  color: #FF9500;
+  text-transform: uppercase;
+}
+.page__benefits .wrapper .heading .subtitle {
+  font: 400 64px "Bebas Neue", serif;
+  color: #242423;
+  line-height: 94%;
+  letter-spacing: -1.3px;
+  text-align: center;
+}
+.page__benefits .wrapper .cards__benefits {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.page__benefits .wrapper .cards__benefits .card {
+  width: 224px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(19, 19, 18, 0.1), 5px 5px 0 #242423;
+  border-radius: 5px;
+}
+.page__benefits .wrapper .cards__benefits .card .icon {
+  width: 30px;
+  margin-bottom: 8px;
+}
+.page__benefits .wrapper .cards__benefits .card .card__title {
+  font: 700 24px "Roboto", sans serif;
+  color: #131312;
+  margin-bottom: 14px;
+}
+.page__benefits .wrapper .cards__benefits .card .text {
+  font: 400 14px "Roboto", sans serif;
+}
+@media (max-width: 1200px) {
+  .page__benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: none;
+  }
+  .page__benefits .wrapper .heading {
+    width: 286px;
+    margin-bottom: 32px;
+  }
+  .page__benefits .wrapper .heading .subtitle {
+    font-size: 52px;
+  }
+}
+.page__company {
+  padding-top: 63px;
+  padding-bottom: 118px;
+}
+.page__company .wrapper {
+  max-width: 1130px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+.page__company .wrapper .content {
+  width: 425px;
+}
+.page__company .wrapper .content .heading {
+  margin-bottom: 18px;
+}
+.page__company .wrapper .content .heading .title__detail {
+  margin-bottom: 8px;
+}
+.page__company .wrapper .content .heading .title {
+  font: 400 16px "Roboto", sans serif;
+  line-height: 127%;
+  letter-spacing: 2.2px;
+  margin-bottom: 12px;
+  color: #FF9500;
+  text-transform: uppercase;
+}
+.page__company .wrapper .content .heading .subtitle {
+  font: 400 48px "Bebas Neue", serif;
+  color: #242423;
+  line-height: 94%;
+}
+.page__company .wrapper .content .text {
+  font: 400 18px "Roboto", sans serif;
+  color: #131312;
+  margin-bottom: 40px;
+}
+.page__company .wrapper .content .text span {
+  font-weight: 700;
+}
+.page__company .wrapper .content .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.page__company .wrapper .content .features .tag__feature {
+  height: 70px;
+  width: 200px;
+  background-color: #131312;
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+.page__company .wrapper .content .features .tag__feature .icon {
+  width: fit-content;
+}
+.page__company .wrapper .content .features .tag__feature span {
+  font: 700 18px "Roboto", sans serif;
+  color: #FFF;
+  line-height: 116%;
+  letter-spacing: 1px;
+}
+.page__company .wrapper .cover__cta {
+  position: relative;
+}
+.page__company .wrapper .cover__cta .card__cta {
+  background-color: #131312;
+  width: 402px;
+  height: 185px;
+  border-radius: 5px;
+  padding: 24px 36px;
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+}
+.page__company .wrapper .cover__cta .card__cta .text {
+  color: #FFF;
+  font: 400 24px "Roboto Condensed", serif;
+  line-height: 124%;
+  margin-bottom: 25px;
+}
+.page__company .wrapper .cover__cta .card__cta .button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 62px;
+  border-radius: 5px;
+  background-color: #FFF;
+  line-height: 116%;
+  letter-spacing: 1.6px;
+  font: 700 16px "Roboto", sans serif;
+  color: #242423;
+  transition: all linear 0.15s;
+}
+.page__company .wrapper .cover__cta .card__cta .button:hover {
+  background-color: #FF9500;
+  color: #F5F5F5;
+}
+@media (max-width: 1200px) {
+  .page__company .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page__company .wrapper .content {
+    width: 100%;
+  }
+  .page__company .wrapper .content .features {
+    gap: 8px;
+  }
+  .page__company .wrapper .content .features .tag__feature {
+    padding: 14px;
+    width: 158px;
+  }
+  .page__company .wrapper .content .features .tag__feature .icon {
+    width: 26px;
+  }
+  .page__company .wrapper .content .features .tag__feature span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .page__company .wrapper .cover__cta {
+    width: 100%;
+  }
+  .page__company .wrapper .cover__cta .cover {
+    width: 100%;
+  }
+  .page__company .wrapper .cover__cta .card__cta {
+    width: 300px;
+    padding: 20px;
+    bottom: -72px;
+  }
+  .page__company .wrapper .cover__cta .card__cta .text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .page__company .wrapper .cover__cta .card__cta .button {
+    padding: 12px 30px;
   }
 }
 .page__footer {
