@@ -340,9 +340,9 @@ nav {
   position: fixed;
   bottom: 5px;
   right: 10px;
-  width: 74px;
-  height: 74px;
-  background-color: #5BBC48;
+  width: 100px;
+  height: 100px;
+  background-color: #25D366;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,18 +350,26 @@ nav {
   z-index: 2999;
   transition: all linear 0.15s;
   border: 0;
-  border-radius: 5px;
+  border-radius: 100%;
 }
 .float__whatsapp img {
-  width: 55px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(202deg) brightness(106%) contrast(101%);
+  width: fit-content;
 }
 .float__whatsapp:hover {
   background-color: white;
-  box-shadow: 0 0 26px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.5);
 }
 .float__whatsapp:hover img {
-  filter: brightness(0) saturate(100%) invert(66%) sepia(10%) saturate(2974%) hue-rotate(64deg) brightness(99%) contrast(75%);
+  filter: brightness(0) saturate(100%) invert(65%) sepia(29%) saturate(3698%) hue-rotate(93deg) brightness(110%) contrast(71%);
+}
+@media (max-width: 1200px) {
+  .float__whatsapp {
+    width: 75px;
+    height: 75px;
+  }
+  .float__whatsapp img {
+    width: 50px;
+  }
 }
 @keyframes effect--fade_in_right {
   0% {
@@ -1292,8 +1300,66 @@ nav {
     margin-right: auto;
   }
 }
-.page__footer {
-  margin-top: -1px;
+.page__cta-3 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F1991D;
+  background-image: url('../img/bg-cta-3.png');
+  background-repeat: no-repeat;
+  background-position: right 10px bottom 0;
+}
+.page__cta-3 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1078px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.page__cta-3 .wrapper .title {
+  width: 545px;
+  font: 400 64px "Bebas Neue", serif;
+  line-height: 94%;
+  letter-spacing: -1.4px;
+  color: #F5F5F5;
+}
+.page__cta-3 .wrapper .button {
+  background-color: #242423;
+  color: #FFF;
+  font: 400 16px "Roboto", sans serif;
+  line-height: 116%;
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 80px;
+  border-radius: 5px;
+  transition: all linear 0.15s;
+}
+.page__cta-3 .wrapper .button:hover {
+  background-color: rgba(36, 36, 35, 0.85);
+  color: #F5F5F5;
+}
+@media (max-width: 1200px) {
+  .page__cta-3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-size: 324px;
+    background-position: right -30px bottom -12px;
+  }
+  .page__cta-3 .wrapper {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .page__cta-3 .wrapper .title {
+    width: 100%;
+    text-align: center;
+  }
+  .page__cta-3 .wrapper .button {
+    padding: 13px 52px;
+  }
 }
 .page__footer .footer__content {
   background-image: url('../img/bg-footer.png');
@@ -1303,7 +1369,7 @@ nav {
   padding-bottom: 75px;
 }
 .page__footer .footer__content .wrapper {
-  max-width: 1090px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -1330,8 +1396,8 @@ nav {
 .page__footer .footer__content .wrapper .footer__links .links__social .link {
   transition: all linear 0.15s;
 }
-.page__footer .footer__content .wrapper .footer__links .links__social .link:hover img {
-  filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(3283%) hue-rotate(197deg) brightness(107%) contrast(99%);
+.page__footer .footer__content .wrapper .footer__links .links__social .link:hover {
+  transform: translateY(-4px);
 }
 .page__footer .footer__content .wrapper .footer__nav {
   display: flex;
@@ -1342,14 +1408,13 @@ nav {
   margin-bottom: 40px;
 }
 .page__footer .footer__content .wrapper .footer__nav .link__nav {
-  color: #F0F8FF;
+  color: #F5F5F5;
   font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase;
   transition: all linear 0.15s;
 }
 .page__footer .footer__content .wrapper .footer__nav .link__nav:hover {
-  color: #0184FE;
+  color: #F1991D;
   cursor: pointer;
 }
 .page__footer .footer__content .wrapper .footer__contacts {
@@ -1367,16 +1432,16 @@ nav {
   width: fit-content;
 }
 .page__footer .footer__content .wrapper .footer__contacts .link__contact .contact {
-  color: #F0F8FF;
+  color: #F5F5F5;
   font-size: 16px;
   transition: all linear 0.15s;
 }
 .page__footer .footer__content .wrapper .footer__contacts .link__contact .contact:hover {
-  color: #0184FE;
+  color: #F1991D;
   cursor: pointer;
 }
 .page__footer .footer__content .wrapper .footer__contacts .contact__info {
-  color: #F0F8FF;
+  color: #F5F5F5;
   font-size: 16px;
   line-height: 149%;
   text-align: center;
@@ -1384,41 +1449,46 @@ nav {
 .page__footer .footer__copyrights {
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: #EEEDED;
 }
 .page__footer .footer__copyrights .wrapper {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .page__footer .footer__copyrights .wrapper .copyrights {
   line-height: 145%;
-  color: #020305;
+  color: #242423;
   text-align: center;
   padding: 0 30px;
 }
 @media screen and (min-width: 768px) {
   .page__footer .footer__content {
-    padding-top: 148px;
-    padding-bottom: 148px;
+    padding-top: 114px;
+    padding-bottom: 90px;
   }
   .page__footer .footer__content .wrapper {
     display: flex;
     justify-content: space-between;
   }
   .page__footer .footer__content .wrapper .footer__links {
-    order: 2;
+    order: 1;
   }
   .page__footer .footer__content .wrapper .footer__links .link__logo {
-    width: 280px;
+    width: fit-content;
   }
   .page__footer .footer__content .wrapper .footer__nav {
-    order: 1;
+    order: 2;
     align-items: flex-start;
     text-align: left;
     margin-bottom: 0;
     width: 279px;
-    padding-left: 140px;
+    padding-left: 90px;
   }
   .page__footer .footer__content .wrapper .footer__contacts {
     align-items: flex-start;
@@ -1433,8 +1503,12 @@ nav {
     text-align: left;
   }
   .page__footer .footer__copyrights {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page__footer .footer__copyrights .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 body {
