@@ -30,72 +30,110 @@
 <body>
     <header class="page__header" id="inicio">
         <div class="wrapper">
-            <div class="d-flex justify-content-between align-items-center">
-                
-                <h1 class="logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo-header.png" alt="">
+            <h1 class="logo">
+                <a href="index.html" class="link__logo">
+                    <img src="assets/img/logo-header.svg" alt="">
+                </a>
+            </h1>                
+
+            <div class="is--desktop">
+                <nav class="links">
+                    <a href="#inicio">
+                        Início
+                    </a>                        
+                    <a href="#funcionalidades">
+                        Funcionalidades
                     </a>
-                </h1>                
-
-                <div class="is--desktop">
-                    <nav class="links">
-                        <a href="#inicio">
-                            Início
-                        </a>                        
-                        <a href="#sobre">
-                            Sobre
-                        </a>                   
-                    </nav>
-
-                    <a href="https://wa.me/5511997796354" class="btn__whats" target="_blank">
-                        <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
-                        Entre em contato
+                    <a href="#vantagens">
+                        Vantagens
                     </a>
-                    
-                </div>
+                    <a href="#planos">
+                        Planos
+                    </a>
+                    <a href="#faq">
+                        FAQ
+                    </a>    
+                    <a href="#contato">
+                        Contato
+                    </a>                   
+                </nav>
+
+                <a href="#" class="button" target="_blank">
+                    <img src="assets/img/icon-user.svg" class="icon" alt="Usuário">
+                    Já sou cliente
+                </a>
                 
-                <div class="is--mobile">
-                    <menu class="navbar__hamburguer">
-                        <img src="assets/img/burger-bar.svg" alt="Menu">
-                    </menu>
+            </div>
+            
+            <div class="is--mobile">
+                <menu class="navbar__hamburguer">
+                    <img src="assets/img/burger-bar.svg" alt="Menu">
+                </menu>
 
-                    <div id="navbar__overlay" class="navbar__overlay">
-                        <div class="overlay__content">
+                <div id="navbar__overlay" class="navbar__overlay">
+                    <div class="overlay__content">
 
-                            <div class="overlay__header">                                                                                           
-                                <img src="assets/img/icon-close.svg" alt="Fechar" class="overlay__close"></img>
-                            </div>
-        
-                            <div class="container d-flex flex-column align-items-center overlay__menu">
-                                
-                                <nav class="overlay__links d-flex flex-column align-items-center">
-                                    <a href="#inicio" class="text-center mobile__anchor">
-                                        Início
-                                    </a>                        
-                                    <a href="#sobre" class="text-center mobile__anchor">
-                                        Sobre
-                                    </a>      
-                                </nav>                              
-
-                                <a href="https://wa.me/5511997796354" class="btn__whats" target="_blank">
-                                    <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
-                                    Entre em contato
-                                </a>
-                                
-                            </div>
+                        <div class="overlay__header">                                                                                           
+                            <img src="assets/img/icon-close.svg" alt="Fechar" class="overlay__close"></img>
                         </div>
+    
+                        <div class="container d-flex flex-column align-items-center overlay__menu">
+                            
+                            <nav class="overlay__links d-flex flex-column align-items-center">
+                                <a href="#inicio" class="text-center mobile__anchor">
+                                    Início
+                                </a>                        
+                                <a href="#funcionalidades" class="text-center mobile__anchor">
+                                    Funcionalidades
+                                </a>
+                                <a href="#vantagens" class="text-center mobile__anchor">
+                                    Vantagens
+                                </a>
+                                <a href="#planos" class="text-center mobile__anchor">
+                                    Planos
+                                </a>
+                                <a href="#faq" class="text-center mobile__anchor">
+                                    FAQ
+                                </a>  
+                                <a href="#contato" class="text-center mobile__anchor">
+                                    Contato
+                                </a>       
+                            </nav>   
+                            
+                            <a href="#" class="button" target="_blank">
+                                <img src="assets/img/icon-whats.svg" class="icon" alt="Usuário">
+                                Já sou cliente
+                            </a>
 
+                            <a href="https://wa.me/" class="btn__whats" target="_blank">
+                                <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                                Entre em contato
+                            </a>
+                            
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </header>
 
+    <div class="page__banner">
+        <div class="wrapper">
+            <h2 class="title">
+                <span>Multi Atendimento</span> Inteligente com Chat Automatizado
+            </h2>
+            <p class="description">Automatize interações, atenda vários clientes ao mesmo tempo e nunca perca uma <span>oportunidade de negócio.</span></p>
+            <a href="#" class="button">
+                Saiba mais
+            </a>
+        </div>
+    </div>
+
    
 
     <a href="https://wa.me/5511997796354" class="float__whatsapp" target="_blank">
-        <img src="assets/img/icon-whats-white.svg" alt="whatsapp">
+        <img src="assets/img/icon-whats.svg" alt="whatsapp">
     </a>
 
     <!-- bootstrap 4.6.1 -->
