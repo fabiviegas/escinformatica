@@ -3,12 +3,13 @@
 // * CAROUSEL UTILS
 // ? Objetivo: mixins para customizar o carrossel do Owl Carousel e manter consistência no projeto.
 
- .owl-dots-square(){
+ .owl-dots-circle(){
     .owl-dots {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
+        margin-top: 30px;
 
         .owl-dot {
             height: 8px !important;
@@ -19,13 +20,13 @@
                 margin: 0;
                 width: 8px;
                 height: 8px;
-                background-color: #8c918d;
-                border-radius: 1px;
+                background-color: #8c9091;
+                border-radius: 100%;
             }
 
             &.active {
                 span {
-                    background-color: #0075E1;
+                    background-color: #0184FE;
                 }
             }
         }
