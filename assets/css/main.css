@@ -794,7 +794,7 @@ nav {
 @media (max-width: 1200px) {
   .page__benefits {
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     background-size: 100% 320px;
   }
   .page__benefits .wrapper .title {
@@ -915,8 +915,8 @@ nav {
 }
 .page__plans .wrapper .plans__cards .plan__card {
   position: relative;
-  width: 348px;
-  height: 629px;
+  width: 328px;
+  height: 674px;
 }
 .page__plans .wrapper .plans__cards .plan__card .card__title {
   position: absolute;
@@ -940,7 +940,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 36px 48px 35px;
+  padding: 60px 32px 48px 32px;
   margin-top: 23px;
   position: relative;
   background: transparent;
@@ -1040,6 +1040,29 @@ nav {
 }
 .page__plans .wrapper .plans__cards .plan__card.highlight .card__content {
   background-color: #131313;
+}
+@media (max-width: 1200px) {
+  .page__plans {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page__plans .wrapper .title {
+    font-size: 42px;
+  }
+  .page__plans .wrapper .title .icon__title {
+    width: 32px;
+    top: -10px;
+    right: -36px;
+  }
+  .page__plans .wrapper .subtitle {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .page__plans .wrapper .plans__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
 }
 body {
   background-color: #F8FCFF;

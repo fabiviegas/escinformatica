@@ -47,8 +47,8 @@
 
             .plan__card {
                 position: relative;
-                width: 348px;
-                height: 629px;
+                width: 328px;
+                height: 674px;
 
                 .card__title {
                     position: absolute;
@@ -74,7 +74,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding: 60px 36px 48px 35px;
+                    padding: 60px 32px 48px 32px;
                     margin-top: 23px;
                     position: relative;
                     background: transparent;
@@ -189,6 +189,34 @@
                     }
                 }
                           
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .wrapper {            
+            .title {
+                font-size: 42px;
+
+                .icon__title {
+                    width: 32px;
+                    top: -10px;
+                    right: -36px;
+                }
+            }
+
+            .subtitle {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+            .plans__cards {
+                flex-direction: column;
+                align-items: center;
+                gap: 42px;
             }
         }
     }
