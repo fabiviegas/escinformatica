@@ -42,11 +42,12 @@
 
         .plans__cards {
             display: flex;
-            gap: 88px;
+            justify-content: center;
+            gap: 84px;
 
             .plan__card {
                 position: relative;
-                width: 337px;
+                width: 348px;
                 height: 629px;
 
                 .card__title {
@@ -57,24 +58,31 @@
                     background-image: linear-gradient(38deg, #131313 1%, #000 26%, #0184FE 100%);
                     border-radius: 20px;
                     padding-top: 8px;
-                    padding-bottom: 7px;
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    color: #F0F8FF;
-                    text-align: center;
+                    padding-bottom: 7px;                    
                     z-index: 2;
+
+                    h3 {
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: #F0F8FF;
+                        text-align: center;
+                    }
                 }
 
                 .card__content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 60px 36px 48px 35px;
                     margin-top: 23px;
                     position: relative;
                     background: transparent;
                     border-radius: 20px;
-                    padding: 20px;
                     text-align: center;
                     color: white;
                     z-index: 1; /* Mantém o conteúdo acima do fundo */
+                    margin-bottom: 8px;
 
                     &::before {
                         content: "";
@@ -84,9 +92,100 @@
                         padding: 4px; /* Define a largura da borda */
                         background: linear-gradient(to bottom, #fff, #259dff2a); /* Gradiente da borda */
                         -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                        mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
                         -webkit-mask-composite: destination-out;
                         mask-composite: exclude;
                         z-index: -1;
+                    }
+
+                    .price {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 24px;
+
+                        .value {
+                            display: flex;
+                            gap: 4px;
+                            font-family: "Russo One", sans-serif;
+                            font-weight: 400;
+                            color: #FFF;
+
+                            .coin {
+                                align-self: flex-start;                                
+                                font-size: 14px;
+                            }
+
+                            .number {
+                               font-size: 96px; 
+                               line-height: 75%;
+                            }
+
+                            .cents {
+                                font-size: 16px;
+                                align-self: flex-end;
+                            }
+                        }
+
+                        .info {
+                            font-family: "Russo One", sans-serif;
+                            font-weight: 400;
+                            text-align: center;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .item {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 10px;
+                            font-size: 14px;
+                            color: #FFF;
+                            font-weight: 400;
+                            text-align: left;
+
+                            .icon {
+                                margin-top: 1px;
+                            }
+                        }
+                    }
+                }
+
+                .description {
+                    display: block;
+                    background-color: #131313;
+                    border-radius: 20px;
+                    padding: 12px 14px 12px 14px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #FFF;
+                    line-height: 132%;
+                    text-align: center;
+
+                    &.last {
+                        font-size: 22px;
+                    }
+                }
+
+                &.highlight {
+                    .card__title {
+                        background: #F0F8FF;
+
+                        h3 {
+                            background-image: linear-gradient(to right, #131313 1%, #000 16%, #0184FE 100%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;                            
+                        }
+                    }
+
+                    .card__content {
+                        background-color: #131313;
                     }
                 }
                           

@@ -124,6 +124,13 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/russoone/v16/Z9XUDmZRWg6M1LvRYsH-yA.ttf) format('truetype');
+}
 html {
   scroll-behavior: smooth;
 }
@@ -903,11 +910,12 @@ nav {
 }
 .page__plans .wrapper .plans__cards {
   display: flex;
-  gap: 88px;
+  justify-content: center;
+  gap: 84px;
 }
 .page__plans .wrapper .plans__cards .plan__card {
   position: relative;
-  width: 337px;
+  width: 348px;
   height: 629px;
 }
 .page__plans .wrapper .plans__cards .plan__card .card__title {
@@ -919,23 +927,29 @@ nav {
   border-radius: 20px;
   padding-top: 8px;
   padding-bottom: 7px;
+  z-index: 2;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__title h3 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 700;
   color: #F0F8FF;
   text-align: center;
-  z-index: 2;
 }
 .page__plans .wrapper .plans__cards .plan__card .card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 36px 48px 35px;
   margin-top: 23px;
   position: relative;
   background: transparent;
   border-radius: 20px;
-  padding: 20px;
   text-align: center;
   color: white;
   z-index: 1;
   /* Mantém o conteúdo acima do fundo */
+  margin-bottom: 8px;
 }
 .page__plans .wrapper .plans__cards .plan__card .card__content::before {
   content: "";
@@ -948,9 +962,84 @@ nav {
   background: linear-gradient(to bottom, #fff, #259dff2a);
   /* Gradiente da borda */
   -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   z-index: -1;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price .value {
+  display: flex;
+  gap: 4px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price .value .coin {
+  align-self: flex-start;
+  font-size: 14px;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price .value .number {
+  font-size: 96px;
+  line-height: 75%;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price .value .cents {
+  font-size: 16px;
+  align-self: flex-end;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .price .info {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .list .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 400;
+  text-align: left;
+}
+.page__plans .wrapper .plans__cards .plan__card .card__content .list .item .icon {
+  margin-top: 1px;
+}
+.page__plans .wrapper .plans__cards .plan__card .description {
+  display: block;
+  background-color: #131313;
+  border-radius: 20px;
+  padding: 12px 14px 12px 14px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 132%;
+  text-align: center;
+}
+.page__plans .wrapper .plans__cards .plan__card .description.last {
+  font-size: 22px;
+}
+.page__plans .wrapper .plans__cards .plan__card.highlight .card__title {
+  background: #F0F8FF;
+}
+.page__plans .wrapper .plans__cards .plan__card.highlight .card__title h3 {
+  background-image: linear-gradient(to right, #131313 1%, #000 16%, #0184FE 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page__plans .wrapper .plans__cards .plan__card.highlight .card__content {
+  background-color: #131313;
 }
 body {
   background-color: #F8FCFF;
