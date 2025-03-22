@@ -1334,6 +1334,124 @@ nav {
     width: 100%;
   }
 }
+.page__footer .footer__content {
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+.page__footer .footer__content .wrapper {
+  max-width: 1254px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 50px;
+}
+.page__footer .footer__content .wrapper .heading {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  margin-right: 24px;
+}
+.page__footer .footer__content .wrapper .heading .logo {
+  margin-bottom: 24px;
+}
+.page__footer .footer__content .wrapper .nav__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.page__footer .footer__content .wrapper .nav__footer .nav__link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  transition: all linear 0.15s;
+}
+.page__footer .footer__content .wrapper .nav__footer .nav__link:hover {
+  color: #0184FE;
+}
+.page__footer .footer__content .wrapper .nav__footer.col--1 {
+  margin-right: 15px;
+}
+.page__footer .footer__content .wrapper .nav__footer.col--2 {
+  margin-right: 20px;
+}
+.page__footer .footer__content .wrapper .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.page__footer .footer__content .wrapper .contact .contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  transition: all linear 0.15s;
+}
+.page__footer .footer__content .wrapper .contact .contact__link:hover {
+  color: #0184FE;
+}
+.page__footer .footer__content .wrapper .time {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  line-height: 170%;
+}
+.page__footer .footer__content .wrapper .time .icon {
+  width: fit-content;
+}
+.page__footer .footer__copyrights {
+  background-color: #222;
+}
+.page__footer .footer__copyrights .copyright {
+  text-align: center;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 134%;
+  color: #F0F8FF;
+}
+@media (max-width: 1200px) {
+  .page__footer .footer__content {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .page__footer .footer__content .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .page__footer .footer__content .wrapper .heading {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 42px;
+  }
+  .page__footer .footer__content .wrapper .nav__footer {
+    align-items: center;
+  }
+  .page__footer .footer__content .wrapper .nav__footer.col--1 {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .page__footer .footer__content .wrapper .nav__footer.col--2 {
+    margin-right: 0;
+    margin-bottom: 42px;
+  }
+  .page__footer .footer__content .wrapper .contact {
+    align-items: center;
+    margin-bottom: 42px;
+  }
+  .page__footer .footer__content .wrapper .time {
+    align-items: center;
+    text-align: center;
+  }
+}
 body {
   background-color: #F8FCFF;
   font-family: "Poppins", sans serif;
