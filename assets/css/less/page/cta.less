@@ -1,2 +1,70 @@
 //out: false
 
+.page__cta {
+    padding-top: 94px;
+    padding-bottom: 93px;
+    background-image: url('../img/bg-cta.png'), linear-gradient(120deg, #000, #127BE5);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+
+    .wrapper {
+        max-width: 1200px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .cta__text {
+            font-size: 42px;
+            color: #F0F8FF;
+            font-weight: 700;
+            line-height: 147%;
+            margin-bottom: 32px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 125px;
+            width: fit-content;
+            background-color: #259DFF;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #F0F8FF;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            box-shadow: 10px 10px 25px rgba(34, 34, 34, 0.15);
+            transition: all linear .15s;
+
+            &:hover {
+                background-color: #F0F8FF;
+                color: #259DFF;
+
+                .icon {
+                    filter: brightness(0) saturate(100%) invert(49%) sepia(100%) saturate(2233%) hue-rotate(186deg) brightness(102%) contrast(103%);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: 145px, 100%;
+
+        .wrapper {
+            .cta__text {
+                text-align: center;
+                font-size: 32px;
+            }
+
+            .button {
+                padding: 16px 32px;
+                width: 100%;
+            }
+        }
+    }
+}
