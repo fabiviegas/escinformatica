@@ -44,6 +44,7 @@
             display: flex;
             justify-content: center;
             gap: 84px;
+            padding-bottom: 100px;
 
             .plan__card {
                 position: relative;
@@ -191,11 +192,47 @@
                           
             }
         }
+
+        .free-trial {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+                font-size: 52px;
+                font-weight: 700;
+                color: #F0F8FF;
+                margin-bottom: 50px;
+                text-align: center;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .button {
+                background-image: linear-gradient(38deg, #131313 1%, #000 26%, #0184FE 100%);
+                padding: 12px 68px;
+                border-radius: 30px;
+                color: #F0F8FF;
+                border: 1px solid #F0F8FF;
+                font-size: 18px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-align: center;
+                transition: all linear .15s;
+
+                &:hover {
+                    background-image: linear-gradient(38deg, #131313 1%, #000 6%, #0184FE 100%);
+                    box-shadow: 2px 2px 20px #F0F8FF;
+                    color: #F0F8FF;
+                }
+            }
+        }
     }
 
     @media (max-width: 1200px) {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
 
         .wrapper {            
             .title {
@@ -217,6 +254,14 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 42px;
+                padding-bottom: 60px;
+            }
+
+            .free-trial {
+                .text {
+                    font-size: 32px;
+                    margin-bottom: 32px;
+                }
             }
         }
     }
