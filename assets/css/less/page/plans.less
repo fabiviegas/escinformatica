@@ -1,8 +1,8 @@
 //out: false
 
 .page__plans {
-    padding-top: 90px;
-    padding-bottom: 142px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-image: url('../img/bg-plans.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +11,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1220px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
 
         .title {  
             width: fit-content;          
@@ -44,7 +49,7 @@
             display: flex;
             justify-content: center;
             gap: 84px;
-            padding-bottom: 100px;
+            padding-bottom: 60px;
 
             .plan__card {
                 position: relative;
@@ -191,6 +196,103 @@
                 }
                           
             }
+        }
+
+        .setup {
+            position: relative;
+            width: 100%;
+            margin-bottom: 80px;
+            max-width: 1169px;
+
+            .card__title {
+                position: absolute;
+                width: 226px;
+                left: calc(50% - 113px);
+                top: 0;
+                background-image: linear-gradient(38deg, #131313 1%, #000 26%, #0184FE 100%);
+                border-radius: 20px;
+                padding-top: 8px;
+                padding-bottom: 7px;                    
+                z-index: 2;
+
+                h3 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #F0F8FF;
+                    text-align: center;
+                }
+            }
+
+            .card__content {
+                display: flex;
+                align-items: center;
+                gap: 42px;
+                padding: 40px 72px 30px 72px;
+                margin-top: 23px;
+                position: relative;
+                background: transparent;
+                border-radius: 20px;
+                color: white;
+                z-index: 1; /* Mantém o conteúdo acima do fundo */
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: -4px; /* Expande a borda para fora */
+                    border-radius: 24px;
+                    padding: 4px; /* Define a largura da borda */
+                    background: linear-gradient(to bottom, #fff, #66b6f75e); /* Gradiente da borda */
+                    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                    -webkit-mask-composite: destination-out;
+                    mask-composite: exclude;
+                    z-index: -1;
+                }
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .value {
+                        display: flex;
+                        gap: 4px;
+                        font-family: "Russo One", sans-serif;
+                        font-weight: 400;
+                        color: #FFF;
+
+                        .coin {
+                            align-self: flex-start;                                
+                            font-size: 14px;
+                        }
+
+                        .number {
+                            font-size: 72px; 
+                            line-height: 75%;
+                        }
+                    }
+
+                    .info {
+                        font-family: "Russo One", sans-serif;
+                        font-weight: 400;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+
+                .description {
+                    font-size: 14px;
+                    color: #FFF;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            
         }
 
         .free-trial {
